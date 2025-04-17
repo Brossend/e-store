@@ -1,0 +1,8 @@
+@import "mixins";
+
+@include font-face('Roboto', '../fonts/Inter/Inter_28pt-Thin', 200, normal, ttf);
+@include font-face('Roboto', '../fonts/Inter/Inter_28pt-Light', 300, normal, ttf);
+@include font-face('Roboto', '../fonts/Inter/Inter_28pt-Regular', 400, normal, ttf);
+@include font-face('Roboto', '../fonts/Inter/Inter_28pt-Medium', 500, normal, ttf);
+@include font-face('Roboto', '../fonts/Inter/Inter_28pt-Bold', 700, normal, ttf);
+@include font-face('Roboto', '../fonts/Inter/Inter_28pt-Black', 900, normal, ttf);
