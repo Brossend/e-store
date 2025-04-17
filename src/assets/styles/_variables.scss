@@ -2,6 +2,8 @@ $gray-600: #2E2E2E;
 $gray-400: #656565;
 $gray-200: #B5B5B5;
 $gray-100: #F5F5F5;
+$gray-50: #EDEDED;
+$gray: #FAFAFA;
 
 $breakpoints: (
         sm: 640px,
@@ -16,6 +18,8 @@ $lg: map-get($breakpoints, lg);
 $xl: map-get($breakpoints, xl);
 
 :root {
+  --gray: #{$gray};
+  --gray-50: #{$gray-50};
   --gray-100: #{$gray-100};
   --gray-200: #{$gray-200};
   --gray-600: #{$gray-600};

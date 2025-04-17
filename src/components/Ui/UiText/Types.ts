@@ -6,4 +6,6 @@ export interface ITextProps {
     noWrap?: boolean;
     text: string;
     link?: string;
+    fontSize?: string | number;
+    lineHeight?: string | number;
 }
