@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# 🛒 e-store — Интернет-магазин электроники (SPA)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://vitejs.dev)
+[![React](https://img.shields.io/badge/react-19.0.0-blue)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/typescript-5.7.2-blue)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/vite-6.2.0-ff69b4)](https://vitejs.dev/)
 
-Currently, two official plugins are available:
+Современное одностраничное приложение (SPA) для магазина электронной коммерции электроники, созданное с использованием *
+*React**, **TypeScript** и **Vite**. Этот проект демонстрирует чистую архитектуру, адаптивный макет, эффективное
+управление состоянием и выборку данных с использованием популярных инструментов из экосистемы React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ React 19 с HMR через Vite
+- 🧠 Управление состоянием с помощью Zustand
+- 🌐 Вызовы API и кэширование с помощью React Query
+- ✅ Управление формами с помощью React Hook Form
+- 🎨 Стилизация с помощью "styled-components" и SCSS-модулей
+- 🚦 Маршрутизация с использованием React Router v7
+- 🧹 Качество кода с помощью ESLint + правил TypeScript, учитывающих тип текста
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Tech Stack
+
+- **Framework**: React + Vite
+- **Language**: TypeScript
+- **State**: Zustand
+- **Routing**: React Router v7
+- **Forms**: React Hook Form
+- **Data Fetching**: TanStack React Query
+- **Styling**: SCSS + styled-components
+- **Linting**: ESLint
+
+## 🚀 Getting Started
+
+```bash
+# Установка зависимостей
+npm install
+
+# Запуск сервера разработки
+npm run dev
+
+# Сборка проекта для production
+npm run build
+
+# Запуск разметки кода
+npm run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+src/
+├── assets/
+├── components/
+├── pages/
+├── store/             # Zustand состояние логика
+├── hooks/             # Пользовательские React hooks
+├── styles/            # Файлы SCSS и темы
+└── main.tsx           # Точка входа
+```
+
+## 🙏 Credits
+
+Спасибо дизайнеру этого концепта пользовательского интерфейса на Figma:  
+[E-Store Design on Figma](https://www.figma.com/design/f524YW83Sc0b9obEwVQAqp/E-Store)
+
+## 📝 License
+
+Этот проект лицензирован под лицензией MIT.
